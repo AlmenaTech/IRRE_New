@@ -1,0 +1,90 @@
+*
+{
+	margin: 0;
+}
+
+.dashboard_tabs
+{
+	margin-top: 1%;
+	margin-left: 1px;
+}
+.tab
+{
+	margin-bottom: 3%;
+
+}
+
+.users_tab
+{
+	
+	margin-right: 1%;
+	height: 110px;
+	max-height: 400px;
+	box-shadow: 3px 3px 6px lightgrey,0px -1px 6px lightgrey;
+}
+.users_tab_first
+{
+	background-color: rgb(171, 69, 255);
+
+}
+.users_tab_second
+{
+	background-color: #FF0A43;
+}
+.users_tab_third
+{
+	background-color: #FC7307;
+}
+.users_tab_4th
+{
+	background-color: #E35535;
+}
+.users_tab h4
+{
+	color: white;
+	margin-top: 3%;
+	margin-left: 2%;
+	word-break: break-all;
+	/*line-height: 70px;*/
+}
+
+.users_tab h4:nth-child(2)
+{
+	border: 0px solid;
+	color: white;
+	margin-bottom: 0;
+	line-height: 35px;
+}
+.car_tab
+{
+	background-color: rgb(168, 232, 66);
+	margin-right: 1%;
+}
+.car_tab h4 
+{
+	color: white;
+	line-height: 70px;
+}
+.booking_tab
+{
+	background-color: #E93B2B;
+}
+.booking_tab h4 
+{
+	color: white;
+	line-height: 70px;
+}
+.column_chart
+{
+	margin-top: 2%;
+}
+.column_chart_left_tab
+{
+	border: 2px solid #1761B5;
+	border-top: 3px solid #FE4A39;
+	border-radius: 7px;
+	box-shadow: 3px 3px 6px lightgrey,0px -1px 6px lightgrey;
+	margin: 1px;
+	/*width: 100%;*/
+
+}

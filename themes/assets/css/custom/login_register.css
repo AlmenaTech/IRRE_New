@@ -1,0 +1,102 @@
+*{margin: 0;}
+a{text-decoration: none;}
+.login-container
+{
+    height: 50vh;
+    background-image: linear-gradient(to right,rgba(125, 125, 125,0.9),rgba(125, 125, 125,0.6)),url('../../images/login.jpg');
+    clip-path: polygon(0 0,100% 0,100% 100%,0 90%);
+    /* clip-path: polygon(0 0,100% 0,100% 100%,50% 70%,0 100%); */
+    background-size: cover;
+    /* border: 2px solid red; */
+}
+.register-container
+{
+    height: 50vh;
+    background-image: linear-gradient(to right,rgba(238, 13, 107, 0.493),rgba(185, 98, 139, 0.6)),url('../../images/register.jpg');
+    clip-path: polygon(0 20%,100% 0,100% 100%,0 100%);
+    /* clip-path: polygon(0 0,50% 30%,100% 0,100% 100%,0 100%); */
+    background-size: cover;
+    /* border: 2px solid black; */
+}
+.login-btn
+{
+    width: 130px;
+    background-image: linear-gradient(to right,rgba(107, 120, 255,0.6),rgba(171, 120, 255,0.6));
+    height: 50px;
+    line-height: 35px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(43, 143, 182, 0.6);
+    transition:  width 0.2s;
+}
+.login-btn:hover
+{
+    background-image: linear-gradient(to right,rgba(196, 58, 65, 0.6),rgba(143, 32, 100, 0.6));
+    font-size: 16px;
+    width: 200px;
+    color: white;
+    box-shadow: 2px 3px 5px rgba(43, 143, 182, 0.6);
+}
+.register-btn
+{
+    width: 130px;
+    background-image: linear-gradient(to right,rgba(87, 75, 104,0.9),rgba(187, 185, 187,0.9));
+    height: 50px;
+    line-height: 35px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(16, 50, 63, 0.267);
+    transition:  width 0.2s;
+}
+.register-btn:hover
+{
+    background-image: linear-gradient(to right,rgba(17, 39, 235, 0.699),rgba(45, 214, 206, 0.3));
+    /* background-image: linear-gradient(to right,rgba(20, 50, 80,0.6),rgba(20, 50, 80,0.3)); */
+    font-size: 16px;
+    width: 200px;
+    color: white;
+    box-shadow: 2px 3px 5px rgba(43, 143, 182, 0.6);
+}
+.g-plus-ico,
+.twitter-ico,
+.linkedin-ico
+{
+    color: white;
+    font-size: 32px;
+}
+.g-plus-ico:hover
+{
+    color: #ff0000;
+
+    font-size: 32px;
+}
+.twitter-ico:hover
+{
+    color: #3E7CEF;
+
+    font-size: 32px;
+}
+.linkedin-ico:hover
+{
+    color: #180085;
+    font-size: 32px;
+}
+.home-btn
+{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    right: 75%;
+    width: 130px;
+    
+    /* background-color: red; */
+    background: linear-gradient(to  right, #666699 29%, #9900ff 90%);
+    color: white;
+    transition: width 0.2s;
+}
+.home-btn:hover
+{
+    width: 150px;
+    background: linear-gradient(to bottom right, #666699 4%, #ff0066 102%);
+    color: white;
+}
