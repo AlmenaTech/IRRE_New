@@ -20,6 +20,7 @@ class Login extends IRRE_Controller
 		}
 		else
 		{
+			
 			$this->load->library('form_validation');
 			$config = array(
 				array(
@@ -68,7 +69,8 @@ class Login extends IRRE_Controller
 	}
 	function logout()
 	{
-		$this->session->unset_userdata('user_dtls');
+		//$this->session->unset_userdata('token_data');
+		session_destroy();
 		return redirect(base_url().'login');
 	}
 }
