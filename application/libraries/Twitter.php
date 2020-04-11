@@ -15,9 +15,9 @@ class Twitter{
         $config_arr['redirect_url'] = $callback_url;
         return $config_arr;
     }
-    public function twitter_login()
+    public function twitter_login($callback_url)
     {
-        $config = $this->set_api_config('http://localhost/IRRE_New/login_register');
+        $config = $this->set_api_config($callback_url);
         if ( isset( $_SESSION['twitter_access_token'] ) && $_SESSION['twitter_access_token'] ) { 
             $isLoggedIn = true;	
         } elseif ( isset( $_GET['oauth_verifier'] ) && isset( $_GET['oauth_token'] ) && isset( $_SESSION['oauth_token'] ) && $_GET['oauth_token'] == $_SESSION['oauth_token'] ) { // coming from twitter callback url
@@ -57,7 +57,7 @@ class Twitter{
 
             // user twitter connection to get user info
             $user = $connection->get( "account/verify_credentials", ['include_email' => 'true'] );
-            $_SESSION['user_data'] = $user;
+            $_SESSION['token_data'] = $user;
             unset($_SESSION['twitter_access_token']);
             unset($_SESSION['oauth_token']);
             unset($_SESSION['oauth_token_secret']);
@@ -65,11 +65,11 @@ class Twitter{
                 $_SESSION = array();
                 header( 'Refresh:0' );
             } else { // display user info in browser
-                return array('user_data'=>$_SESSION['user_data']);
+                return array('token_data'=>$_SESSION['token_data'],'status'=> '1','login_type' => 't');
             }
         } else {  // not logged in, get and display the login with twitter link
             $url = $connection->url( 'oauth/authorize', array( 'oauth_token' => $request_token['oauth_token'] ) );
-            return array('twitter_login_url'=>$url);
+            return array('twitter_login_url'=>$url,'status'=>'2','login_type' => 't');
         }
     }
 }

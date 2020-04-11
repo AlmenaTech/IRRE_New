@@ -22,8 +22,8 @@
 			</div>
 			<div class="col-md-12  text-center">
 				<div class="m-top-20">
-					<a href="<?php //echo $google_auth_url; ?>" class="m-right-20 g-plus-ico"><i class="fa fa-google-plus"></i></a>
-					<a href="<?php echo $twitter_auth_url; ?>" class="m-right-20 twitter-ico"><i class="fa fa-twitter"></i></a>
+					<a href="<?php echo $google_auth['url']; ?>" class="m-right-20 g-plus-ico"><i class="fa fa-google-plus"></i></a>
+					<a href="<?php echo $twitter_auth['twitter_login_url']; ?>" class="m-right-20 twitter-ico"><i class="fa fa-twitter"></i></a>
 					<a href="javascript:void(0)" class="linkedin-ico"><i class="fa fa-linkedin"></i></a>
 				</div>
 			</div>
@@ -35,8 +35,8 @@
 			</div>
 			<div class="col-md-12  text-center">
 				<div class="m-top-20">
-					<a href="javascript:void(0)" class="m-right-20 g-plus-ico"><i class="fa fa-google-plus"></i></a>
-					<a href="javascript:void(0)" class="m-right-20 twitter-ico"><i class="fa fa-twitter"></i></a>
+					<a href="<?php echo $google_auth['url']; ?>" class="m-right-20 g-plus-ico"><i class="fa fa-google-plus"></i></a>
+					<a href="<?php echo $twitter_auth['twitter_login_url']; ?>" class="m-right-20 twitter-ico"><i class="fa fa-twitter"></i></a>
 					<a href="javascript:void(0)" class="linkedin-ico"><i class="fa fa-linkedin"></i></a>
 				</div>
 			</div>
