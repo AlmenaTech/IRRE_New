@@ -1,0 +1,55 @@
+.box{
+    max-width: 135rem;
+    height: 100%;
+}
+.stakes-container{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 2.18rem;
+    left: 3.12rem;
+    transform: translate(50%,20%);
+    background: linear-gradient(to right,#8601AF,#C21460);
+    padding: 3px 3px;
+}
+.stakes-body{
+    background-color: whitesmoke;
+    padding: 0;
+}
+.stakes-body > .col-md-12:nth-child(1){
+    background: linear-gradient(to right,#340933,#D70494);
+    margin-bottom: 2%;
+}
+.stakes-body div h3{
+    width: 100%;
+    color: whitesmoke;
+    
+}
+.stakes-content{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 0 !important;
+}
+.stakes-content div:nth-child(2) h4{
+    line-height: 20px;
+    margin-top: -0.3%;
+}
+input[type="radio"]{
+    transform: scale(2);
+}
+.setup-btn{
+    float: right;
+    width: 80px;
+    height: 35px;
+    border-radius: 0 !important;
+    border: 2px solid;
+    background-color: white;
+    border-image-source: linear-gradient(to right,#340933,#611ADB);
+    border-image-slice: 1;
+    color: black;
+}
+
+@media screen and (max-width:762px){
+    .stakes-container{
+        transform: translate(15%,20%);
+    }
+}
