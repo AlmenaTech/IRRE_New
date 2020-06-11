@@ -1,0 +1,112 @@
+*{margin: 0;}
+a{text-decoration: none;}
+.login-register-container
+{
+    height: 100vh;
+
+    background-image: linear-gradient(-75deg,transparent 50%,rgba(125, 125, 125,0.9) 50%,rgba(125, 125, 125,0.9) 50%),url('../../images/login.jpg');
+    
+   
+    background-size: cover;
+    position: relative;
+}
+.login-container,.register-container{height: 100vh;}
+.login-container>.login-body{
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    border: 1px solid red;
+    transform: translate(80px,60px);
+}
+.register-container>.register-body{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    /* border: 1px solid red; */
+    transform: translate(80px,80px);
+}
+.or-container{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    /* border: 1px solid red;; */
+}
+.google-login{
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 100%;
+    /* line-height: 35px; */
+    margin: 0;
+}
+.google-login>a{
+    display: block;
+    background-color: #FD4D0C;
+    color: white;
+    padding: 10px 5px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.twitter-login{
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 100%;
+    /* line-height: 35px; */
+    margin: 0;
+
+}
+.twitter-login>a{
+    display: block;
+    background-color: #6395F2;
+    color: white;
+    padding: 10px 5px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+/* Media query starts */
+@media only screen and (max-width: 1000px) and (min-width: 916px){
+    .login-container>.login-body{
+        position: absolute;
+        top: 150px;
+        /* right: 180px; */
+        /* border: 1px solid red; */
+        transform: translate(80px,60px);
+    }
+    .register-container>.register-body{
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        border: 1px solid red;
+        transform: translate(80px,60px);
+    }
+}
+@media only screen and (max-width: 916px) and (min-width: 854px){
+    .login-container>.login-body{
+        position: absolute;
+        top: 150px;
+        /* right: 180px; */
+        /* border: 1px solid red; */
+        transform: translate(80px,60px);
+    }
+    .register-container>.register-body{
+        position: absolute;
+        top: 180px;
+        left: 120px;
+        border: 1px solid red;
+        transform: translate(80px,60px);
+    }
+}
+@media only screen and (max-width: 854px) {
+    .login-register-container
+    {
+        width: 100vw;
+        background-image: linear-gradient(350deg,transparent 40%,rgba(125, 125, 125,0.9) 40%,
+            rgba(125, 125, 125,0.9) 60%),url('../../images/login.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Media query ends */

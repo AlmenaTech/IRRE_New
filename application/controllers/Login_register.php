@@ -60,7 +60,11 @@ class Login_register extends IRRE_Controller
                     $user_login_dtls = array(
                         'email'                 => $user_dtls[0]['email_id'],
                         'stake_holder_login_pk' => $user_dtls[0]['stake_holder_login_pk'],
-                        'stake_id_fk'           => $user_dtls[0]['stake_id_fk']
+                        'stake_id_fk'           => $user_dtls[0]['stake_id_fk'],
+                        'fname'                 => $fname,
+                        'mname'                 => $mname,
+                        'lname'                 => $lname,
+                        'user_id_pk'            => $user_dtls[0]['user_id_pk']
                     );
                     $this->session->set_userdata('user_dtls',$user_login_dtls);
                     // print_r($this->session->userdata('user_dtls'));
@@ -91,7 +95,11 @@ class Login_register extends IRRE_Controller
                         $user_login_dtls = array(
                             'email'                 => $user_data['email'],
                             'stake_holder_login_pk' => $insert_status['stake_holder_login_pk'],
-                            'stake_id_fk'           => NULL
+                            'stake_id_fk'           => NULL,
+                            'fname'                 => $fname,
+                            'mname'                 => $mname,
+                            'lname'                 => $lname,
+                            'user_id_pk'            => $insert_status['user_id_pk']
                         );
                         $this->session->set_userdata('user_dtls',$user_login_dtls);
                         return redirect('login_register/user_admin');
@@ -130,7 +138,11 @@ class Login_register extends IRRE_Controller
                     $user_login_dtls = array(
                         'email'                 => $user_dtls[0]['email_id'],
                         'stake_holder_login_pk' => $user_dtls[0]['stake_holder_login_pk'],
-                        'stake_id_fk'           => $user_dtls[0]['stake_id_fk']
+                        'stake_id_fk'           => $user_dtls[0]['stake_id_fk'],
+                        'fname'                 => $fname,
+                        'mname'                 => $mname,
+                        'lname'                 => $lname,
+                        'user_id_pk'            => $user_dtls[0]['user_id_pk']
                     );
                     $this->session->set_userdata('user_dtls',$user_login_dtls);
                     // print_r($this->session->userdata('user_dtls'));
@@ -160,7 +172,11 @@ class Login_register extends IRRE_Controller
                         $user_login_dtls = array(
                             'email'                 => $user_data['email'],
                             'stake_holder_login_pk' => $insert_status['stake_holder_login_pk'],
-                            'stake_id_fk'           => NULL
+                            'stake_id_fk'           => NULL,
+                            'fname'                 => $fname,
+                            'mname'                 => $mname,
+                            'lname'                 => $lname,
+                            'user_id_pk'            => $insert_status['user_id_pk']
                         );
                         $this->session->set_userdata('user_dtls',$user_login_dtls);
                         return redirect('login_register/user_admin');
@@ -189,7 +205,7 @@ class Login_register extends IRRE_Controller
             else
             {
                 // redirect to user login
-                return redirect(base_url().'user');
+                return redirect(base_url().'admin');
             }
         }
         else

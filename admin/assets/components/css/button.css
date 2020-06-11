@@ -1,0 +1,29 @@
+
+.button-style-1 {
+    background-color: purple;
+    color: white;
+    border-radius: 50px;
+    width: 180px;
+    height: 40px;
+    border: 2px solid purple;
+    z-index: 1;
+    position: relative; 
+}
+.button-style-1::after {
+    content: "";
+    background-color: purple;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: all 0.8s; 
+}
+.button-style-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0; 
+}
+
+      

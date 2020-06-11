@@ -1,0 +1,20 @@
+.upload-file-input-field
+{
+    display: none;
+}
+.upload-file-space
+{
+    border: 2px dashed purple;
+    border-radius: 7px;
+    width: 100%;
+    padding: 3rem 0;
+}
+.upload-file-text-align
+{
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+.file-no-text{
+    color: tomato;
+    letter-spacing: 0.02rem;
+}

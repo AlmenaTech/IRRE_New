@@ -43,7 +43,7 @@ class Login_register_model extends CI_Model
         if($user_dtls_affected_rows==1 && $login_affected_rows==1 && $login_update_affected_rows==1)
         {
             $this->db->trans_commit();
-            return array('status'=>'true','stake_holder_login_pk'=>$login_insert_id);
+            return array('status'=>'true','stake_holder_login_pk'=>$login_insert_id,'user_id_pk'=>$user_dtls_insert_id);
         }
         else
         {
@@ -53,7 +53,8 @@ class Login_register_model extends CI_Model
     }
     function get_user_dtls($email,$login_type)
     {
-        $query = $this->db->select('ud.email_id,shl.login_id,shl.stake_holder_login_pk,shl.stake_id_fk')
+        $query = $this->db->select('ud.email_id,shl.login_id,shl.stake_holder_login_pk,shl.stake_id_fk,
+                        ud.user_id_pk')
                           ->from('irre_stake_holder_login as shl')
                           ->join('irre_user_details as ud','ud.user_id_pk=shl.stake_details_id_fk','left')
                           ->where(

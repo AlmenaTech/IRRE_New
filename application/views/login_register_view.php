@@ -18,7 +18,7 @@
 	<div class="row">
 		<div class="col-md-12 login-container">
 			<div class="col-md-12  text-center">
-				<a href="javascript:void(0)" class="btn login-btn m-top-40">Login</a>
+				<a href="login" class="btn login-btn m-top-40">Login</a>
 			</div>
 			<div class="col-md-12  text-center">
 				<div class="m-top-20">
@@ -31,7 +31,7 @@
 		<div class="col-md-12 register-container">
 			
 			<div class="col-md-12  text-center">
-				<a href="javascript:void(0)" class="btn register-btn m-top-60" >Register</a>
+				<a href="register" class="btn register-btn m-top-60" >Register</a>
 			</div>
 			<div class="col-md-12  text-center">
 				<div class="m-top-20">

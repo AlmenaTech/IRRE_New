@@ -1,0 +1,96 @@
+
+.button-style-1 {
+    background-color: purple;
+    color: white;
+    border-radius: 50px;
+    width: 180px;
+    height: 40px;
+    border: 2px solid purple;
+    z-index: 1;
+    position: relative; 
+}
+.button-style-1::after {
+    content: "";
+    background-color: purple;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: all 0.8s; 
+}
+.button-style-1:hover{
+    color: white;
+}
+.button-style-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0; 
+}
+
+      
+
+.button-style-2 {
+    background-color: white;
+    color: purple;
+    border-radius: 0px !important;
+    padding: 5px 70px;
+    width: 100%;
+    border: 2px solid white;
+    z-index: 1;
+    position: relative;
+    font-weight: bold; 
+}
+.button-style-2::after {
+    content: "";
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px !important;
+    transition: all 0.8s; 
+}
+.button-style-2:hover{
+    color: purple;
+}
+.button-style-2:hover::after {
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0; 
+}
+
+.button-style-3 {
+    background-color: #FD3A0F;
+    color: white;
+    border-radius: 30px !important;
+    width: 100%;
+    padding: 10px 70px;
+    border: 2px solid #FD3A0F;
+    z-index: 1;
+    position: relative;
+    font-weight: bold; 
+}
+.button-style-3::after {
+    content: "";
+    background-color: #FD3A0F;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px !important;
+    transition: all 0.8s; 
+}
+.button-style-3:hover{
+    color: white;
+}
+.button-style-3:hover::after {
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0; 
+}
+
+      
